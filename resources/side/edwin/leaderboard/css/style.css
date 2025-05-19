@@ -1,0 +1,54 @@
+/* leaderboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.message {
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
