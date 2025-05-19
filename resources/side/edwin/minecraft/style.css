@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('http://localhost/side/edwin/fonts/Minecraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* remove white border from page */
+body {
+  margin: 0;
+  font-family: 'Minecraft';
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#info {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 24px;
+  right: 0;
+  bottom: 0;
+  color: white;
+  margin: 8px;
+}
+
+#toolbar-container {
+  position: fixed;
+  bottom: 8px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+#toolbar {
+  background-color: rgb(109, 109, 109);
+  border: 4px solid rgb(147, 147, 147);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 12px;
+}
+
+.toolbar-icon {
+  width: 64px;
+  height: 64px;
+  outline: 4px solid rgb(58, 58, 58);;
+}
+
+.toolbar-icon.selected {
+  outline: 4px solid white;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000080;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
+#status {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  font-size: 2em;
+  color: white;
+}
+
+
+/* Add this to ensure the modal is on top */
+.modal-backdrop {
+  z-index: 1040;
+}
+
+.modal {
+  z-index: 1050;
+}
+
+/* Example to make sure the modal is centered and visible */
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+
+
+
+

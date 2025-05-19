@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  color: white;
+  margin: 8px;
+}
+
+#info {
+position: absolute;
+right: 0;
+bottom: 0;
+font-family: 'Arial', sans-serif; /* Consider using a web font like Google Fonts for more styles */
+font-size: 60px;
+color: #72f3a4; /* White color */
+margin: 8px;
+font-weight: bold; /* Bold text for better visibility */
+}
+
+
+#gameName {
+position: absolute; /* Position the element absolutely */
+top: 100px; /* Distance from the top of the page */
+left: 50%; /* Move it to the horizontal center */
+transform: translateX(-50%); /* Offset by 50% to perfectly center it */
+font-family: monospace; /* Use a retro or pixel-style font */
+font-size: 120px;
+color: #0044cc; /* Set a solid blue color */
+-webkit-background-clip: text;
+background-clip: text; /* Standard */
+-webkit-text-fill-color: transparent; /* Apply the gradient to the text fill */
+text-shadow: 2px 2px 0px #72f3a4, 4px 4px 0px #003366; /* Use blue and darker blue shadows for depth */
+letter-spacing: 4px; /* Slightly larger letter spacing */
+animation: glow 1.5s infinite alternate; /* Add a blue glow effect animation */
+text-transform: uppercase; /* Make the text uppercase */
+margin: 20px;
+}
+
+@keyframes glow {
+0% {
+  text-shadow: 2px 2px 0px #72f3a4, 4px 4px 0px #003366, 0 0 10px #72f3a4, 0 0 20px #0044cc;
+}
+100% {
+  text-shadow: 2px 2px 0px #72f3a4, 4px 4px 0px #003366, 0 0 20px #0044cc, 0 0 40px #0033cc;
+}
+}
+#buttons{
+position: absolute;
+top: 500px;
+left: 50%; /* Move it to the horizontal center */
+transform: translateX(-50%); /* Offset by 50% to perfectly center it */
+display: flex; /* Use flexbox for buttons layout */
+flex-direction: column; /* Stack buttons vertically */
+gap: 60px; /* Space of 30px between buttons */
+}
+
+
+
+.button {
+font-family: monospace; /* Use a retro or pixel-style font */
+letter-spacing: 4px; /* Slightly larger letter spacing */
+font-size: large;
+background-color: #079563;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+font-size: 40px;
+border-radius: 6px;
+}
+
+
+.button:hover {
+background-color: #2eab7d; /* Green */
+color: white;
+}
+
+.button:active {
+background-color: #15704f; /* Green */
+}
+
+#backButton {
+position: absolute;
+left: 10px;
+bottom: 10px;
+}
+
+#time-remaining {
+font-size: 30px;
+}
+
+.playerInformation {
+font-family: monospace;
+font-size: 40px;
+position: absolute;
+top: 500px;
+left: 50%; /* Move it to the horizontal center */
+transform: translateX(-50%); /* Offset by 50% to perfectly center it */
+
+}
+
+#restartButton {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#toolbar-container {
+position: fixed;
+bottom: 8px;
+width: 100%;
+
+display: flex;
+justify-content: center;
+}
+
+#toolbar {
+background-color: rgb(109, 109, 109);
+border: 4px solid rgb(147, 147, 147);
+padding: 8px;
+display: flex;
+justify-content: space-between;
+column-gap: 12px;
+}
+
+.toolbar-icon {
+width: 64px;
+height: 64px;
+outline: 4px solid rgb(58, 58, 58);;
+}
+
+.toolbar-icon.selected {
+outline: 4px solid white;
+}
+
+#status {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  font-size: 2em;
+  color: white;
+}
+
+
+
+
+
+
+
+
+#modal-overlay {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+#modal-content {
+  background-color: #fff;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 400px; 
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+#modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#modal-close:hover,
+#modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#qr-code {
+  margin-top: 20px;
+}
+
+#modal-content p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  #modal-content {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+#leaderboard {
+  position: fixed;
+  right: 40px;
+  top: 20%;
+  width: 200px;
+  height: 250px;
+  background-color: #e6f7e6; 
+  border: 1px solid #ccc;
+  border-radius: 15px; 
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#leaderboard h2 {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 35px
+
+}
+
+  #leaderboard ol li {
+  color: black;
+  font-size: 20px
+  
+}
